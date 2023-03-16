@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(55, 53, 73)
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+#task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#submit-button {
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: darkslategrey;
+    color:wheat;
+}
+
+button {
+    cursor: pointer;
+}
