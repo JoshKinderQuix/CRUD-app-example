@@ -54,12 +54,13 @@ function renderList() {
   const data = getData();
   const listElement = document.getElementById('list');
   listElement.innerHTML = '';
+
   for (let i = 0; i < data.length; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = data[i];
     const editButton = document.createElement('button');
-    editButton.textContent = 'Edit';
-    editButton.onclick = () => {
+    editButton.textContent = 'Edit'; 
+    editButton.onclick = () => { 
       const updatedItem = prompt('Update item:', data[i]);
       if (updatedItem) {
         updateItem(i, updatedItem);
